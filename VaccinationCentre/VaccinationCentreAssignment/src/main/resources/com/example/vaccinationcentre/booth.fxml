@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="373.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vaccinationcentre.ControllerBooth">
+    <children>
+        <BorderPane layoutY="6.0" prefHeight="200.0" prefWidth="200.0">
+            <right>
+                <VBox prefHeight="200.0" prefWidth="512.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ListView fx:id="listVcBooth" prefHeight="248.0" prefWidth="512.0">
+                     <cursor>
+                        <Cursor fx:constant="CROSSHAIR" />
+                     </cursor>
+                  </ListView>
+               </children>
+            </VBox>
+            </right>
+            <center>
+                <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <VBox prefHeight="161.0" prefWidth="143.0">
+                            <children>
+                                <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="143.0" text="Booth Id" />
+                                <Label prefHeight="27.0" prefWidth="106.0" text="Floor Level" />
+                                <Label prefHeight="26.0" prefWidth="139.0" text="Accessibility Information" />
+                        <Label prefHeight="30.0" prefWidth="116.0" text="Vaccination Centre" />
+                            </children>
+                        </VBox>
+                        <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="230.0">
+                            <children>
+                                <TextField fx:id="txtBoothId" prefHeight="33.0" prefWidth="230.0" text="A1" />
+                                <TextField fx:id="txtFloor" text="2" />
+                                <TextField fx:id="txtAccess" text="Wheelchair accessible" />
+                        <Button fx:id="listVc" mnemonicParsing="false" onAction="#showVcListView" prefHeight="32.0" prefWidth="142.0" text="List Vaccination Centres" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </center>
+        </BorderPane>
+        <Button fx:id="listBooths" alignment="CENTER" layoutX="7.0" layoutY="227.0" mnemonicParsing="false" onAction="#showBooth" prefHeight="30.0" prefWidth="162.0" text="List Vaccination Booths" />
+        <Button fx:id="addBooth" layoutX="169.0" layoutY="227.0" mnemonicParsing="false" onAction="#addBoothToList" prefHeight="30.0" prefWidth="70.0" text="Add" />
+        <Button layoutX="239.0" layoutY="227.0" mnemonicParsing="false" onAction="#deleteBoothBtn" prefHeight="30.0" prefWidth="70.0" text="Delete" />
+      <ListView fx:id="blankField2" layoutX="7.0" layoutY="257.0" prefHeight="111.0" prefWidth="879.0" />
+    </children>
+</AnchorPane>
