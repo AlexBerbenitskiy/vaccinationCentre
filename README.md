@@ -1,1 +1,1 @@
-# vaccinationCentre
+This program was designed as a project for Data Structures and Algorithms 1. The program functions as system used to manage vaccine centers, patients, and appointments, without using existing Java collections or data structure classes such as arraylists.
